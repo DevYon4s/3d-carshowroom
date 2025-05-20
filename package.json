@@ -1,8 +1,14 @@
 {
-  "name": "carshowroom3d",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "3d-carshowroom",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A 3D interactive car showroom built with React, Three.js, and Vite. Browse, view, and explore various car models in a virtual environment.",
+  "author": "DevYon4s",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevYon4s/3d-carshowroom.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
