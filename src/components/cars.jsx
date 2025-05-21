@@ -45,7 +45,7 @@ const cars = [
     details_position: [40, 7, 0],
   },
   {
-    name: "Yello lamborghini",
+    name: " Aventador",
     position: [50, 0, 0],
     price: "600K",
     file: "yellow_lambo.glb",
