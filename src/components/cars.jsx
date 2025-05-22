@@ -1,4 +1,4 @@
-import { useGLTF, Html } from "@react-three/drei";
+import { useGLTF, Html, Text3D } from "@react-three/drei";
 import "../index.css";
 
 const cars = [
@@ -68,6 +68,15 @@ function Car({ file, position, scale, rotate, name, price, details_position }) {
   const { scene } = useGLTF(`/models/${file}`);
   return (
     <group>
+      <Text3D
+        size={0.5}
+        curveSegments={32}
+        position={[0, 0, -5]}
+        rotation={[0, Math.PI / 2, 0]}
+      >
+        i ❤ cars
+        <meshstStandardMaterial attach="material" color="grey" />
+      </Text3D>
       <primitive
         object={scene}
         position={position}
