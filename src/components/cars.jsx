@@ -68,15 +68,6 @@ function Car({ file, position, scale, rotate, name, price, details_position }) {
   const { scene } = useGLTF(`/models/${file}`);
   return (
     <group>
-      <Text3D
-        size={0.5}
-        curveSegments={32}
-        position={[0, 0, -5]}
-        rotation={[0, Math.PI / 2, 0]}
-      >
-        i ❤ cars
-        <meshstStandardMaterial attach="material" color="grey" />
-      </Text3D>
       <primitive
         object={scene}
         position={position}
@@ -84,6 +75,19 @@ function Car({ file, position, scale, rotate, name, price, details_position }) {
         rotation={rotate}
       />
       {/* Car label and price */}
+      <Text3D
+        font="/fonts/Playwrite HU_Regular copy.json" // Make sure this file exists
+        size={10}
+        curveSegments={32}
+        color="grey"
+        position={[70, 0, 20]}
+        bevelThickness={2}
+        bevelEnabled
+        rotation={[0, Math.PI / 1, 0]}
+      >
+        I Love cars
+        <meshStandardMaterial attach="material" color="grey" />
+      </Text3D>
       <Html
         position={
           details_position

@@ -12,7 +12,7 @@ function App() {
       <OrbitControls
         target={[25, 0, 0]}
         maxPolarAngle={Math.PI / 2}
-        minDistance={8}
+        minDistance={2}
         maxDistance={50}
       />
       <Environment preset="warehouse" />
